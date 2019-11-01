@@ -73,7 +73,7 @@ new ScrollMagic.Scene({
 			})
 			.setPin("#slideContainer2")
 			.setTween(profileAnimation)
-			.addIndicators() // add indicators (requires plugin)
+			// .addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 			
 new ScrollMagic.Scene({
@@ -84,7 +84,7 @@ new ScrollMagic.Scene({
 			})
 			.setPin(".work-section")
 			.setTween(workAnimation)
-			.addIndicators() // add indicators (requires plugin)
+			// .addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
 window.addEventListener("mousemove", onMouseMove);
