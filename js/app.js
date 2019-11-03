@@ -1,8 +1,8 @@
 
 let controller = new ScrollMagic.Controller();
 let profileAnimation = new TimelineMax()
-	.to(".background-image", 2, {backgroundPosition:'0 -50%'})
-	.fromTo(".profile-image", 2, {y:'200%'}, {y:'0%'}, 1)
+	.to(".background-image", 1, {backgroundPosition:'0 -50%'})
+	.fromTo(".profile-image", 1, {y:'200%'}, {y:'0%'}, 1)
 	.fromTo(".side-panel", 2, {x:'100%'}, {x:'0%'}, 1)
 	.fromTo(".main-content h1", 2, {y:'500%'}, {y:'0%'}, 1)
 	.fromTo(".main-content ul li:nth-of-type(1)", 1, {y:'2vh', opacity: 0}, {y:'0%', opacity: 1}, 2)
