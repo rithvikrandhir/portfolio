@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    width: 100vw;
 }
 
 .container{
@@ -10,7 +11,7 @@ body{
 .section{
     height: 25%;
     width: 100vw;
-    background-color: black; 
+    background-color: #060618; 
     position: relative;
     overflow: hidden;
 }
@@ -18,7 +19,7 @@ body{
 .title{
     color: white;
     margin: 0;
-    font-size: 120px;
+    font-size: 8vw;
     font-weight: bold;
     
     .layer1{
@@ -97,57 +98,104 @@ body{
        animation: 1.6s ease infinite wheel-up-down;
      }
 }
+
 .main-section{
 
-    .background-image{
-        background-image: url('../assets/BG.png');
-        height: 300vh;
-        width: 100vw;
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        margin: 0;
-    }
-    .profile-image{
-        position: absolute;
-        bottom: 0;
-        left: -15%;
-        img{
-            width: 90%;
-            transform: scaleX(-1);
-        }
-    }
-    .main-content{
-        grid-column-start: 2;
-        color: white;
-        text-transform: uppercase;
-        justify-self: end;
-        position: relative;
-        top: 14vh;
-        right: 20%;
-       
-        h1{
-            font-size: 100px;
-            margin-bottom: 0;
-        }
-        ul{
-            margin-top:0;
-        }
-        li{
-            list-style: none;
-            font-size: 30px;
-            margin-left: 38.5%;
-            font-weight: bold;
-        }
-    }
-    .side-panel{
-        position: absolute;
-        right: 0;
+    width: 300%;
+    height: 100vh;
+    //display: grid;
+    
+    .slide{
+        width: 32%;
         height: 100vh;
-        width: 28vw;
-        background-color: red;
-        mix-blend-mode: color-dodge;
-        opacity: 0.75;
-        margin-top: 15vh;
+        float: left;
+        display: flex;
+        z-index: -5;
+        // display: grid;
+        // grid-template-columns: 1fr 3fr;
+        .side-panel{
+            width: 20vw;
+            height: 100vh;
+
+        }
+        .main-panel{
+            //width: 80vw;
+            height: 100vh;
+            
+        }
+    }
+
+    .slide-1{
+        background-color: #111786;
+        position: relative;
+        img{
+            height: 70vh;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .side-panel{
+            background-color: #EEC044;
+        }
+        .main-panel{
+            position: relative;
+            
+        }
+        p{
+            font-family: 'Playfair Display Black', serif;
+            font-weight: 800;
+            color: #F8CC55;
+            font-size: 8vh;
+            position: absolute;
+            top: 40%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .slide-2{
+        background-color: #281C3E;
+        position: relative;
+        .side-panel{
+            background-color: #DE3848;
+            width: 100%;
+            //transition: all 1s ease-out;
+            //animation: mymove 4s ease-in-out;
+        }
+        .main-panel{
+            position: relative;
+            
+        }
+        .para-group{
+            font-size: 2vw;
+            font-family: 'Playfair Display Black', serif;
+            font-weight: 800;
+            color: #DE3848;
+            position: absolute;
+            top: 50%;
+            left: 59%;
+            transform: translate(-50%, -50%);
+        }
+
+    }
+    .slide-3{
+        background-color: #111786;
+        width: 36%;
+        position: relative;
+        .side-panel{
+            width: 100%;
+            background-color: #3890DE;
+           //transition: all 1s ease-out;
+        }
+        .para2-group{
+            font-size: 2vw;
+            font-family: 'Playfair Display Black', serif;
+            font-weight: 800;
+            color: #3890DE;
+            position: absolute;
+            top: 50%;
+            left: 59%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 .work-section{
@@ -155,10 +203,10 @@ body{
     .my-work{
         color: white;
         margin: 0;
-        font-size: 80px;
+        font-size: 5vw;
         position: absolute;
-        bottom: 0;
-        left : 20px;
+        bottom: 2vh;
+        left : 5vw;
         z-index: 2;
         width: 16.67%;
         &:before {
@@ -182,6 +230,7 @@ body{
             animation: glitchy 2s cubic-bezier(0.47, 0, 0.745, 0.715) infinite reverse;
             clip-path: polygon(0 12%, 100% 39%, 100% 77%, 0 92%);
         }
+       
     }
     .work-info{
         display: grid;
@@ -189,7 +238,7 @@ body{
     }
     .work{
         grid-column: 2;
-        width: 600vw;
+        width: 600%;
         display: flex;  
             .project{
                 width: 7%;
@@ -252,12 +301,17 @@ body{
 }
 .about-section{
     position: relative;
+    font-family: 'Playfair Display Black', serif;
+    font-weight: 800;
+    //background-image: url('../assets/regular-bg.jpg');
+    background-size: cover;
+    opacity: 1;
     p{
         position: absolute;
         top:45%;
         left:50%;
         color: white;
-        font-size: 30px;
+        font-size: 2vw;
         font-weight: 200;
         transform: translate(-50%, -70%);
     }
@@ -266,10 +320,24 @@ body{
         top: 65%;
         left:50%;
         transform: translateX(-50%);
-        width: 300px;
+        width: 30vw;
         height: 60px;
         font-size: 15px;
         font-weight: bold;
+        //background-image: url('../assets/button-bg.gif');
+        background-size: cover;
+        background-color: transparent;
+        background-position: initial;
+        color: white;
+        border: 1px solid white;
+        border-radius: 2px;
+        //mix-blend-mode: color-dodge;
+        transition: background-color 0.5s ease-in-out;
+        &:hover{
+            color: #060618;
+            background-color: white;
+            transition: background-color 0.5s ease-in-out;
+        }
     }
     .highlight-word-1, .highlight-word-2{
         font-weight: bold;
@@ -280,6 +348,51 @@ body{
     .highlight-word-2{
         color: blue;
     }
+}
+@media screen and (max-width: 800px){
+    .title{
+        font-size: 15vw;
+    }
+    .work-section{
+        .my-work{
+            font-size: 8vw;
+        }
+        .work{
+            width: 700;
+            .project{
+                width: 13%;
+            }
+        }
+    }
+    .main-section{
+        .slide-1{
+            img{
+                height: 40vh;
+            }
+            p{
+                font-size: 7vw;
+            }
+        }
+        .slide-2{
+            .para-group{
+                font-size: 3vw; 
+            }
+        }
+        .slide-3{
+            .para2-group{
+                font-size: 3vw; 
+            }
+        }
+    }
+    .about-section{
+        p{
+            font-size: 4vw;
+        }
+        button{
+            width: 50vw;
+        }
+    }
+    
 }
 @keyframes wheel-up-down {
       0% {

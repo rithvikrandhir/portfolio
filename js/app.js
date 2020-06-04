@@ -1,81 +1,81 @@
 
+let moveAmount = '-300%';
 let controller = new ScrollMagic.Controller();
-let profileAnimation = new TimelineMax()
-	.to(".background-image", 1, {backgroundPosition:'0 -50%'})
-	.fromTo(".profile-image", 1, {y:'200%'}, {y:'0%'}, 1)
-	.fromTo(".side-panel", 2, {x:'100%'}, {x:'0%'}, 1)
-	.fromTo(".main-content h1", 2, {y:'500%'}, {y:'0%'}, 1)
-	.fromTo(".main-content ul li:nth-of-type(1)", 1, {y:'2vh', opacity: 0}, {y:'0%', opacity: 1}, 2)
-	.to(".main-content ul li:nth-of-type(1)", 0.5, {opacity: 0}, 3)
-	.fromTo(".main-content ul li:nth-of-type(2)", 0.5, {y:'2vh', opacity: 0}, {y:'-5vh', opacity: 1}, 3)
-	.to(".main-content ul li:nth-of-type(2)", 0.5, {opacity: 0}, 4)
-	.fromTo(".main-content ul li:nth-of-type(3)", 0.5, {y:'2vh', opacity: 0}, {y:'-9vh', opacity: 1}, 4);
+let introAnimation = new TimelineMax()	
+	.to(".section-slides", 6, {x: "-65%", ease: Linear.easeNone}, 0)
+	// .pause(1)
+	.to(".side-panel-2", 1, {width: "20%", ease: Circ.easeOut}, 2)
+	.fromTo(".para-group", 0.5, {opacity: 0.2}, {opacity: 1}, 2.5)
+	.to(".side-panel-3", 1, {width: "20%", ease: Circ.easeOut}, 4.5)
+	.fromTo(".para2-group", 0.5, {opacity: 0.2}, {opacity: 1}, 5)
+	//.to(".section-slides", 1, {x: "-64%", ease: Expo.easeOut});
+
+window.addEventListener('load', ()=> {
+	if (window.innerWidth < 800){
+		moveAmount = '-500%';
+		console.log("fired");
+	}
+	else{
+		moveAmount = '-300%';
+	}
+	
+})
 
 let workAnimation = new TimelineMax()
-	.to(".project1", 0.05, {x:'-300%'}, 0)
+	.to(".project1", 0.05, {x: moveAmount}, 0)
 	.to(".project1 .project-image", 0.01, {y: '60%'}, 0)
 	.from(".project1 .project-name", 0.01, {opacity:1}, 0)
-	.from(".project1 h1:first-child", 0.01, {opacity:1, color: '#EC0F0D'}, 0)
+	.from(".project1 h1:first-child", 0.01, {opacity:1, color: '#fff'}, 0)
 	.from(".project1 .content", 0.01, {opacity:1}, 0)
 
-	.to(".project2", 0.05, {x:'-300%'}, 0)
+	.to(".project2", 0.05, {x: moveAmount}, 0)
 	.to(".project2 .project-image", 0.01, {y: '0%'}, 0)
 	.to(".project2 .project-name", 0.01, {opacity:1}, 0)
-	.to(".project2 h1:first-child", 0.01, {opacity:1, color: '#EC0F0D'}, 0)
+	.to(".project2 h1:first-child", 0.01, {opacity:1, color: '#fff'}, 0)
 	.to(".project2 .project-image", 0.01, {y: '60%'}, 0.01)
 	.to(".project2 .content", 0.01, {opacity:1}, 0)
 	.to(".project2 .project-name", 0.01, {opacity:0}, 0.01)
 	.to(".project2 .content", 0.01, {opacity:0}, 0.01)
 	.to(".project2 h1:first-child", 0.01, {opacity:0.1, color: '#fff'}, 0.01)
 	
-	.to(".project3", 0.05, {x:'-300%'}, 0)
+	.to(".project3", 0.05, {x: moveAmount}, 0)
 	.to(".project3 .project-image", 0.01, {y: '0%'}, 0.01)
 	.to(".project3 .project-name", 0.01, {opacity:1}, 0.01)
-	.to(".project3 h1:first-child", 0.01, {opacity:1, color: '#EC0F0D'}, 0.01)
+	.to(".project3 h1:first-child", 0.01, {opacity:1, color: '#fff'}, 0.01)
 	.to(".project3 .project-image", 0.02, {y: '60%'}, 0.02)
 	.to(".project3 .content", 0.01, {opacity:1}, 0.01)
 	.to(".project3 .project-name", 0.01, {opacity:0}, 0.02)
 	.to(".project3 .content", 0.01, {opacity:0}, 0.02)
 	.to(".project3 h1:first-child", 0.01, {opacity:0.1, color: '#fff'}, 0.02)
 
-	.to(".project4", 0.05, {x:'-300%'}, 0)
+	.to(".project4", 0.05, {x: moveAmount }, 0)
 	.to(".project4 .project-image", 0.01, {y: '0%'}, 0.02)
 	.to(".project4 .project-name", 0.02, {opacity:1}, 0.02)
 	.to(".project4 .content", 0.01, {opacity:1}, 0.02)
-	.to(".project4 h1:first-child", 0.01, {opacity:1, color: '#EC0F0D'}, 0.02)
+	.to(".project4 h1:first-child", 0.01, {opacity:1, color: '#fff'}, 0.02)
 	.to(".project4 .project-image", 0.02, {y: '60%'}, 0.04)
 	.to(".project4 .project-name", 0.01, {opacity:0}, 0.04)
 	.to(".project4 .content", 0.01, {opacity:0}, 0.04)
 	.to(".project4 h1:first-child", 0.01, {opacity:0.1, color: '#fff'}, 0.04)
 
-	.to(".project5", 0.05, {x:'-300%'}, 0)
+	.to(".project5", 0.05, {x: moveAmount}, 0)
 	.to(".project5 .project-image", 0.01, {y: '0%'}, 0.03)
 	.to(".project5 .project-name", 0.02, {opacity:1}, 0.04)
 	.to(".project5 .content", 0.01, {opacity:1}, 0.04)
-	.to(".project5 h1:first-child", 0.01, {opacity:1, color: '#EC0F0D'}, 0.04);
+	.to(".project5 h1:first-child", 0.01, {opacity:1, color: '#fff'}, 0.04);
 	
-	
-// new ScrollMagic.Scene({
-// 				triggerElement: "#slideContainer1",
-// 				triggerHook: "onStart",
-// 				triggerHook: 0,
-// 				duration: "20%"
-// 			})
-// 			.setPin("#slideContainer1")
-// 			.addIndicators() // add indicators (requires plugin)
-// 			.addTo(controller);
 
 new ScrollMagic.Scene({
 				triggerElement: ".main-section",
 				triggerHook: "onEnter",
 				triggerHook: 0,
-				duration: "200%"
+				duration: "600%"
 			})
 			.setPin("#slideContainer2")
-			.setTween(profileAnimation)
-			// .addIndicators() // add indicators (requires plugin)
+			.setTween(introAnimation)
+			 //.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
-			
+
 new ScrollMagic.Scene({
 				triggerElement: ".work-section",
 				triggerHook: "onEnter",
@@ -88,7 +88,6 @@ new ScrollMagic.Scene({
 			.addTo(controller);
 
 window.addEventListener("mousemove", onMouseMove);
-
 
 function mapHueX(x){
 	const percentageX = x / window.innerWidth;
