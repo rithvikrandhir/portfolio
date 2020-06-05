@@ -10,16 +10,16 @@ let introAnimation = new TimelineMax()
 	.fromTo(".para2-group", 0.5, {opacity: 0.2}, {opacity: 1}, 5)
 	//.to(".section-slides", 1, {x: "-64%", ease: Expo.easeOut});
 
-window.addEventListener('load', ()=> {
-	if (window.innerWidth < 800){
-		moveAmount = '-500%';
-		console.log("fired");
-	}
-	else{
-		moveAmount = '-300%';
-	}
+// window.addEventListener('load', ()=> {
+// 	if (window.innerWidth < 800){
+// 		moveAmount = '-500%';
+// 		console.log("fired");
+// 	}
+// 	else{
+// 		moveAmount = '-300%';
+// 	}
 	
-})
+// })
 
 let workAnimation = new TimelineMax()
 	.to(".project1", 0.05, {x: moveAmount}, 0)
@@ -67,13 +67,13 @@ let workAnimation = new TimelineMax()
 
 new ScrollMagic.Scene({
 				triggerElement: ".main-section",
-				triggerHook: "onEnter",
+				// triggerHook: "onEnter",
 				triggerHook: 0,
 				duration: "600%"
 			})
 			.setPin("#slideContainer2")
 			.setTween(introAnimation)
-			 //.addIndicators() // add indicators (requires plugin)
+			//.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
 new ScrollMagic.Scene({

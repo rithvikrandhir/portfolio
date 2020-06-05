@@ -2,6 +2,8 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
+    // max-width: 100%;
+    overflow-x: hidden;
 }
 
 .container{
@@ -264,36 +266,47 @@ body{
                 height: 100%;
                 width: 100%;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 50%;
+                background-position: center;
                 position: relative;
 
                 .content{
-                    padding: 4vw;
+                    padding: 2vw;
                     font-weight: 300;
                     color: white;
                     font-size: 20px;
                     position: absolute;
-                    top: 10vw;
+                    // top: 2vw;
                     background-color: rgba(black, 0.5);
                     opacity: 0;
                 }
             }
-            .project1 .project-image{
-                background-image: url(../assets/project1.png);
+            .project1 
+            {
+                
+                .project-image
+                {
+                    background-color: #152C68;
+                    background-image: url(../assets/airbus.png);
+                }
             }
             .project2 .project-image{
-                background-image: url(../assets/project2.png);
+                background-color: #C93832;
+                background-image: url(../assets/northface.png);
                 transform: translateY(60%);
             }
             .project3 .project-image{
-                background-image: url(../assets/project3.png);
+                background-color: #050001;
+                background-image: url(../assets/foodcoma.png);
                 transform: translateY(60%);
             }
             .project4 .project-image{
-                background-image: url(../assets/project1.png);
+                background-color: #01212C;
+                background-image: url(../assets/octave.png);
                 transform: translateY(60%);
             }
             .project5 .project-image{
+                background-size: 100%;
                 background-image: url(../assets/project2.png);
                 transform: translateY(60%);
             }   
