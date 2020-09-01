@@ -1,0 +1,549 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+}
+
+.container .intro, .container .questions {
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container .intro {
+  background-color: #fff;
+}
+
+.container .intro .section-1 {
+  border: 2px solid white;
+  border-bottom: 1px solid white;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px 1fr 100px;
+      grid-template-rows: 100px 1fr 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  background-color: #000000;
+  background-image: url("../assets/intro-name.png");
+  background-size: 35vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.container .intro .section-1 .mouse-text {
+  text-transform: uppercase;
+  padding-left: 67px;
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
+.container .intro .section-1 .mouse-text:nth-of-type(2) {
+  padding-bottom: 30px;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.container .intro .section-1 .name {
+  background-image: url("../assets/intro-name.png");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+}
+
+.container .intro .section-2 {
+  background-image: url("../assets/me.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  border: 2px solid white;
+  border-right: none;
+  border-left: none;
+}
+
+.container .intro .section-3 {
+  border: 2px solid white;
+  border-bottom: 1px solid white;
+  background-color: #1b1b1b;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px 1fr 100px;
+      grid-template-rows: 100px 1fr 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  color: #fff;
+  padding-left: 60px;
+  padding-right: 100px;
+}
+
+.container .intro .section-3 .intro-text {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 44px;
+}
+
+.container .intro .section-3 .mouse-text {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 3fr 1fr 1fr 1fr;
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+  font-size: 12px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container .intro .section-3 .mouse-text:nth-of-type(2) {
+  padding-bottom: 50px;
+}
+
+.container .intro .section-3 .mouse-text:nth-of-type(2) p {
+  grid-column: 1/-1;
+}
+
+.container .intro .section-3 .mouse-text a .fab, .container .intro .section-3 .mouse-text a .far {
+  font-size: 24px;
+  color: #CF0156;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.container .intro .section-3 .mouse-text a .fab:hover, .container .intro .section-3 .mouse-text a .far:hover {
+  color: #fff;
+}
+
+.container .questions {
+  display: -ms-grid;
+  display: grid;
+  color: white;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.container .questions .question {
+  overflow: scroll;
+  border: 2px solid white;
+  border-right: none;
+  border-top: 1px solid white;
+  font-size: 24px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  z-index: 200;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30px 1fr;
+      grid-template-rows: 30px 1fr;
+}
+
+.container .questions .question p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.container .questions .question:nth-of-type(3) {
+  border-right: 2px solid white;
+}
+
+.container .questions .question .interaction {
+  padding: 20px 0 0 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 1;
+  justify-self: flex-start;
+}
+
+.container .questions .question .interaction-mobile {
+  padding: 20px 0 0 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: none;
+}
+
+.container .questions .question .image {
+  mix-blend-mode: lighten;
+}
+
+.container .questions .question-1 {
+  background-color: #000;
+  position: relative;
+}
+
+.container .questions .question-1 .about-me-container {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  top: 0;
+  left: 15%;
+  height: 100vh;
+  width: 80%;
+  overflow: scroll;
+  padding: 50px 0;
+}
+
+.container .questions .question-1 .about-me-container .about-me {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -ms-grid;
+  display: grid;
+}
+
+.container .questions .question-1 .about-me-container .about-me p {
+  font-size: 20px;
+  opacity: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .questions .question-1 .about-me-container .about-me p:last-of-type {
+  padding-bottom: 100px;
+}
+
+.container .questions .question-1 .about-me-container .about-me h6 {
+  padding-top: 20px;
+}
+
+.container .questions .question-1 .about-me-container .about-me h1 {
+  padding: 20px 0;
+}
+
+.container .questions .question-2 {
+  background-color: #0F0F0F;
+  position: relative;
+  background-size: cover;
+}
+
+.container .questions .question-2 h1 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.container .questions .question-2 .work-container {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  height: 100vh;
+  width: 80%;
+  padding: 50px;
+  overflow: scroll;
+}
+
+.container .questions .question-2 .work-container .work {
+  height: 200vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  opacity: 1;
+  overflow: scroll;
+}
+
+.container .questions .question-2 .work-container .work .project {
+  display: -ms-grid;
+  display: grid;
+  padding: 50px 0;
+  margin-bottom: 5px;
+}
+
+.container .questions .question-2 .work-container .work .project a {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container .questions .question-2 .work-container .work .project a:hover {
+  opacity: 1;
+}
+
+.container .questions .question-2 .work-container .work .project a .cover-image {
+  height: 100%;
+  width: auto;
+}
+
+.container .questions .question-2 .work-container .work .project p {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.container .questions .question-2 .work-container .work .project-1 a {
+  height: 100%;
+  grid-row: 1/-1;
+}
+
+.container .questions .question-2 .work-container .work .project-1 a .cover-image {
+  background-color: #000000;
+  color: #C350DC;
+  width: 100%;
+  position: relative;
+  background-image: url("../assets/food_coma.png");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 60% 40%;
+  grid-row: 1/-1;
+}
+
+.container .questions .question-2 .work-container .work .project-2 a {
+  height: 100%;
+  grid-row: 1/-1;
+}
+
+.container .questions .question-2 .work-container .work .project-2 a .cover-image {
+  background-image: url("../assets/airbus.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.container .questions .question-2 .work-container .work .project-3 a {
+  height: 100%;
+  grid-row: 1/-1;
+}
+
+.container .questions .question-2 .work-container .work .project-3 a .cover-image {
+  background-image: url("../assets/instagram.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.container .questions .question-3 {
+  background-color: #1B1B1B;
+  position: relative;
+  background-size: cover;
+}
+
+.container .questions .question-3 .other-container {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  top: 0;
+  left: 15%;
+  height: 100vh;
+  width: 80%;
+  overflow: scroll;
+}
+
+.container .questions .question-3 .other-container .other-stuff {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  padding: 5rem 0;
+}
+
+.container .questions .question-3 .other-container .other-stuff p {
+  font-size: 20px;
+  opacity: 0;
+}
+
+.container .questions .question-1 .image {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0))), url("../assets/About.png");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("../assets/About.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .questions .question-2 .image {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  grid-column: 1/-1;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0))), url("../assets/Work.png");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("../assets/Work.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .questions .question-3 .image {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0))), url("../assets/Other.png");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("../assets/Other.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+  .container .questions .question-1 .about-me-container .about-me {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+  .container .questions .question-2 .work-container .work .project-1 a .cover-image {
+    background-image: url("../assets/food_coma_mobile.png");
+  }
+  .container .questions .question-2 .work-container .work .project-2 a .cover-image {
+    background-image: url("../assets/airbus_mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .container .questions .question-2 .work-container .work .project-3 a .cover-image {
+    background-image: url("../assets/instagram_mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container .intro, .container .questions {
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container .intro {
+    height: 100vh;
+  }
+  .container .intro .section-1 {
+    background-color: white;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    background-image: url("../assets/intro-me-mobile.png");
+    background-size: cover;
+    background-position: center;
+    border-right: 2px solid white;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  .container .intro .section-1 .mouse-text {
+    visibility: hidden;
+  }
+  .container .intro .section-2 {
+    display: none;
+  }
+  .container .questions .question .interaction {
+    display: none;
+  }
+  .container .questions .question .interaction-mobile {
+    display: block;
+  }
+  .container .questions .question-1 {
+    border-right: 2px solid white;
+    border-bottom: none;
+  }
+  .container .questions .question-1 .about-me-container {
+    left: 10%;
+  }
+  .container .questions .question-1 .about-me-container .about-me {
+    grid-column: 1/-1;
+    padding-right: 2rem;
+  }
+  .container .questions .question-1 .about-me-container .about-me p {
+    padding-right: 10px;
+  }
+  .container .questions .question-2 {
+    border-right: 2px solid white;
+    border-bottom: none;
+  }
+  .container .questions .question-2 .work-container {
+    grid-column: 1/-1;
+    left: 12%;
+  }
+  .container .questions .question-2 .work-container .work {
+    padding: 50px 0;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  .container .questions .question-3 .other-container {
+    left: 10%;
+  }
+  .container .questions .question-3 .other-container .other-stuff {
+    grid-column: 1/-1;
+    padding-right: 2rem;
+    padding-left: 50px;
+  }
+  .container .questions .question-3 .other-container .other-stuff p {
+    padding-right: 10px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container .intro .section-3 {
+    padding: 30px;
+  }
+  .container .intro .section-3 .mouse-text:nth-of-type(1) {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container .intro .section-3 .mouse-text:nth-of-type(1) p {
+    grid-column: 1/-1;
+    padding-bottom: 20px;
+  }
+  .container .questions .question-1 .about-me-container {
+    left: 10%;
+  }
+  .container .questions .question-1 .about-me-container .about-me {
+    grid-column: 1/-1;
+    padding-right: 0px;
+  }
+  .container .questions .question-1 .about-me-container .about-me p {
+    padding: 0px;
+  }
+  .container .questions .question-2 .work-container {
+    width: 120%;
+    left: -10%;
+  }
+  .container .questions .question-2 .work-container .work {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  .container .questions .question-3 .other-container {
+    left: 10%;
+    -ms-grid-rows: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+  }
+  .container .questions .question-3 .other-container .other-stuff {
+    grid-column: 1/-1;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .container .questions .question-3 .other-container .other-stuff p {
+    padding: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
