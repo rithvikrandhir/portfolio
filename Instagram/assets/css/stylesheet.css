@@ -664,6 +664,10 @@ a:hover:after {
   transition: all 0.3s ease-in-out;
 }
 .poster .interaction-mobile{
+
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
   display: none;
 }
 /* INFO */
@@ -1103,7 +1107,8 @@ ul.list li:last-of-type {
     display: none;
   }
   .poster .interaction-mobile{
-    display: inherit;
+    display: block;
+    opacity: 1;
   }
 }
 
