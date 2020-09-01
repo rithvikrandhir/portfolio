@@ -657,6 +657,9 @@ a:hover:after {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
+.poster .interaction-mobile{
+  display: none;
+}
 /* INFO */
 
 .info {
@@ -1089,6 +1092,12 @@ ul.list li:last-of-type {
   }
   .nav a{
     padding-left: 30px;
+  }
+  .poster .interaction{
+    display: none;
+  }
+  .poster .interaction-mobile{
+    display: inherit;
   }
 }
 
