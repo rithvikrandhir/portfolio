@@ -422,6 +422,8 @@ a:hover:after {
   color: white;
   align-self: end;
   justify-self: left;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .poster-1 p,
 .poster-3 p,
@@ -433,6 +435,8 @@ a:hover:after {
   text-align: left;
   align-self: start;
   padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 
 }
 
@@ -465,7 +469,7 @@ a:hover:after {
 .poster-8 .item {
   grid-column: 2;
   color: white;
-  width: 80%;
+  width: 40vw;
   min-height: 100px;
   display: flex;
   align-items: center;
@@ -922,7 +926,7 @@ ul.list li:last-of-type {
 
 /* BREAKPOINTS */
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   html {
     font-size: 16px;
   }
@@ -963,15 +967,23 @@ ul.list li:last-of-type {
     font-size: 1rem;
     line-height: 1rem;
   }
+  .poster-2 .item,
+  .poster-4 .item,
+  .poster-6 .item,
+  .poster-8 .item {
+  
+    width: 40vw;
+  
+  }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .noscroll {
     overflow: hidden !important;
   }
 
   .poster {
-    width: 100%;
+    width: 100vw;
   }
   .project-overview{
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -1067,10 +1079,24 @@ ul.list li:last-of-type {
   .footer-logos-left {
     margin-bottom: 1rem;
   }
+  .poster-2 .item,
+  .poster-4 .item,
+  .poster-6 .item,
+  .poster-8 .item {
+  
+    width: 80vw;
+  
+  }
+  .nav a{
+    padding-left: 30px;
+  }
 }
 
-@media (max-width: 340px) {
+@media screen and (max-width: 340px) {
   .footer-logos a {
     height: 20px;
+  }
+  .small-3 .description{
+    padding-top: 30px;
   }
 }
