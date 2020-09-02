@@ -192,7 +192,7 @@ question2.addEventListener('click', ()=>{
         if(flagQ2){
            
             q2content.style.display = 'grid';
-            gsap.to('.question-2 .image', 0.3, {opacity: 0.2});
+            gsap.to('.question-2 .image', 0.3, {opacity: 0.1});
             if(window.innerWidth < 800){
                 gsap.to('.question-2', 0.3, {height: '90vh'});
             } else {
@@ -273,7 +273,7 @@ question3.addEventListener('click', ()=>{
     } else {
         if(flagQ3){
             q3content.style.display = 'grid';
-            gsap.to('.question-3 .image', 0.3, {opacity: 0.2});
+            gsap.to('.question-3 .image', 0.3, {opacity: 0.1});
             if(window.innerWidth < 800){
                 gsap.to('.question-3', 0.3, {height: '90vh'});
             } else {
