@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="713bfe82-5b93-431f-b861-81e88a6aed43" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/User_Flows.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/User_Flows.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/User_Flows@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/User_Flows@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/airbus-wireframes.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/airbus-wireframes.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-black-half-inverse.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-black-half-inverse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-black-half.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-black-half.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-black-quart-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-black-quart-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-black-quart-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-black-quart-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-black-quart-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-black-quart-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-black-quart-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-black-quart-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-black.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-white-half-inverse.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-white-half-inverse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-white-half.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-white-half.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-white-quart-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-white-quart-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-white-quart-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-white-quart-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-white-quart-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-white-quart-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-white-quart-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-white-quart-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/border-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/border-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/cover-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/cover-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/cursor-close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/cursor-close.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-11.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-12.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-13.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-14.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-15.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/design-9.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/design-9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/project-title.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/project-title.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/wireframe-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/wireframe-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/wireframe-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/wireframe-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/wireframe-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/wireframe-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/wireframe-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/wireframe-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/wireframe-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/wireframe-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/images/wireframe-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/images/wireframe-6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/assets/js/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/assets/js/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airbus/js/jquery-1.10.1.min.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Airbus/js/jquery-1.10.1.min.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-black-half-inverse.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-black-half-inverse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-black-half.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-black-half.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-black-quart-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-black-quart-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-black-quart-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-black-quart-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-black-quart-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-black-quart-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-black-quart-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-black-quart-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-black.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-white-half-inverse.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-white-half-inverse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-white-half.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-white-half.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-white-quart-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-white-quart-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-white-quart-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-white-quart-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-white-quart-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-white-quart-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-white-quart-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-white-quart-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/border-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/border-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/comp-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/comp-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/comp-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/comp-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/cs-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/cs-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/cs-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/cs-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/cursor-close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/cursor-close.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/ecosystem.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/ecosystem.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/f&amp;f-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/f&amp;f-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/f&amp;f.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/f&amp;f.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/persona-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/persona-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/persona-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/persona-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/persona-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/persona-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/project-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/project-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/project-title.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/project-title.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/sitemap-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/sitemap-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/sitemap-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/sitemap-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/sketches.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/sketches.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/user-flows.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/user-flows.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/user-interviews.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/user-interviews.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/wireframes-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/wireframes-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/wireframes-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/wireframes-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/images/wireframes.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/images/wireframes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/assets/js/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/assets/js/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foodcoma/js/jquery-1.10.1.min.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Foodcoma/js/jquery-1.10.1.min.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-black-half-inverse.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-black-half-inverse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-black-half.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-black-half.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-black-quart-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-black-quart-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-black-quart-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-black-quart-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-black-quart-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-black-quart-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-black-quart-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-black-quart-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-black.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-white-half-inverse.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-white-half-inverse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-white-half.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-white-half.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-white-quart-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-white-quart-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-white-quart-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-white-quart-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-white-quart-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-white-quart-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-white-quart-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-white-quart-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/border-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/border-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/cover-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/cover-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/cursor-close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/cursor-close.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/design-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/design-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/design-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/design-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/design-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/design-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/design-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/design-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/project-title.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/project-title.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/research_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/research_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/research_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/research_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/sketching.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/sketching.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/wireframe-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/wireframe-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/wireframe-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/wireframe-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/wireframe-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/wireframe-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/images/wireframe-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/images/wireframe-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/assets/js/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/assets/js/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instagram/js/jquery-1.10.1.min.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Instagram/js/jquery-1.10.1.min.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/About.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/About.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Mask Group.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Mask Group.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Other.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Other.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Work.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Work.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/airbus.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/airbus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/airbus_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/airbus_mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/arrow-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/arrow-right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food_coma.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/food_coma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food_coma_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/food_coma_mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/instagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/instagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/instagram_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/instagram_mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/int-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/int-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/int-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/int-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/int-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/int-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/intro-me-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/intro-me-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/intro-me-mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/intro-me-mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/intro-me.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/intro-me.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/intro-name.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/intro-name.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/me.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/me.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/q1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/q1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/q1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/q1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/q2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/q2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/q3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/q3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/question-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/question-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/question-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/question-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/question-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/question-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/question-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/question-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/question-default.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/question-default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iTkqdJuk2mlPriltYKjCR3ztGu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="713bfe82-5b93-431f-b861-81e88a6aed43" name="Default Changelist" comment="" />
+      <created>1601939160265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601939160265</updated>
+      <workItem from="1601939161388" duration="329000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
