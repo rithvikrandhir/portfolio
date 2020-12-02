@@ -18,7 +18,8 @@ body {
   display: grid;
 }
 
-.container .intro, .container .questions {
+.container .intro,
+.container .questions {
   height: 100vh;
   width: 100vw;
   display: -ms-grid;
@@ -130,14 +131,16 @@ body {
   grid-column: 1/-1;
 }
 
-.container .intro .section-3 .mouse-text a .fab, .container .intro .section-3 .mouse-text a .far {
+.container .intro .section-3 .mouse-text a .fab,
+.container .intro .section-3 .mouse-text a .far {
   font-size: 24px;
-  color: #CF0156;
+  color: #cf0156;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
 
-.container .intro .section-3 .mouse-text a .fab:hover, .container .intro .section-3 .mouse-text a .far:hover {
+.container .intro .section-3 .mouse-text a .fab:hover,
+.container .intro .section-3 .mouse-text a .far:hover {
   color: #fff;
 }
 
@@ -147,10 +150,22 @@ body {
   color: white;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.container .questions:-webkit-scrollbar {
+  display: none;
 }
 
 .container .questions .question {
-  overflow: scroll;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   border: 2px solid white;
   border-right: none;
   border-top: 1px solid white;
@@ -164,6 +179,10 @@ body {
   display: grid;
   -ms-grid-rows: 30px 1fr;
       grid-template-rows: 30px 1fr;
+}
+
+.container .questions .question:-webkit-scrollbar {
+  display: none;
 }
 
 .container .questions .question p {
@@ -220,6 +239,14 @@ body {
   width: 80vw;
   overflow: scroll;
   padding: 50px 0;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.container .questions .question-1 .about-me-container:-webkit-scrollbar {
+  display: none;
 }
 
 .container .questions .question-1 .about-me-container .about-me {
@@ -250,7 +277,7 @@ body {
 }
 
 .container .questions .question-2 {
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   position: relative;
   background-size: cover;
 }
@@ -268,6 +295,14 @@ body {
   width: 80vw;
   padding: 50px;
   overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.container .questions .question-2 .work-container:-webkit-scrollbar {
+  display: none;
 }
 
 .container .questions .question-2 .work-container .work {
@@ -314,7 +349,7 @@ body {
 
 .container .questions .question-2 .work-container .work .project-1 a .cover-image {
   background-color: #000000;
-  color: #C350DC;
+  color: #c350dc;
   width: 100%;
   position: relative;
   background-image: url("../assets/food_coma.png");
@@ -348,7 +383,7 @@ body {
 }
 
 .container .questions .question-3 {
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
   position: relative;
   background-size: cover;
 }
@@ -364,6 +399,14 @@ body {
   height: 100vh;
   width: 80%;
   overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.container .questions .question-3 .other-container:-webkit-scrollbar {
+  display: none;
 }
 
 .container .questions .question-3 .other-container .other-stuff {
@@ -423,7 +466,8 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .container .intro, .container .questions {
+  .container .intro,
+  .container .questions {
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     -ms-grid-columns: 1fr;

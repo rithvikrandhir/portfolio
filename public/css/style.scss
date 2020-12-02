@@ -1,573 +1,580 @@
 @mixin transition($args...) {
-    -webkit-transition: $args;
-    -moz-transition: $args;
-    -ms-transition: $args;
-    -o-transition: $args;
-    transition: $args;
-  }
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #000;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.5px;
+body {
+  background-color: #000;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
 }
-.container{
+.container {
+  display: grid;
+  .intro,
+  .questions {
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    .intro, .questions{
-        height: 100vh;
-        width: 100vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .intro {
+    background-color: #fff;
+
+    .section-1 {
+      border: 2px solid white;
+      border-bottom: 1px solid white;
+      // border-right: none;
+      grid-column: 1/2;
+      display: grid;
+      grid-template-rows: 100px 1fr 100px;
+      align-items: end;
+      // background-image: url('../assets/intro-me.png');
+      // background-size: 107vh;
+      // background-repeat: no-repeat;
+      background-color: #000000;
+      background-image: url("../assets/intro-name.png");
+      background-size: 35vh;
+      background-repeat: no-repeat;
+      background-position: center center;
+      // filter: saturate(1.5);
+      transform: rotate(180deg);
+      .mouse-text {
+        // padding-top: 25px;
+        text-transform: uppercase;
+        padding-left: 67px;
+        font-size: 12px;
+        font-weight: 600;
+        padding-bottom: 50px;
+        &:nth-of-type(2) {
+          padding-bottom: 30px;
+          grid-row: 3;
+        }
+      }
+      .name {
+        background-image: url("../assets/intro-name.png");
+        background-size: 100vh;
+        background-repeat: no-repeat;
+        background-position-x: 0;
+      }
     }
-    .intro{
-        background-color: #fff;
-        
-        .section-1{
-            border: 2px solid white;
-            border-bottom: 1px solid white;
-            // border-right: none;
-            grid-column: 1/2;
-            display: grid;
-            grid-template-rows: 100px 1fr 100px;
-            align-items: end;
-            // background-image: url('../assets/intro-me.png');
-            // background-size: 107vh;
-            // background-repeat: no-repeat;
-            background-color: #000000;
-            background-image: url('../assets/intro-name.png');
-                background-size: 35vh;
-                background-repeat: no-repeat;
-                background-position: center center;  
-            // filter: saturate(1.5);
-            transform: rotate(180deg);
-            .mouse-text{
-                // padding-top: 25px;
-                text-transform: uppercase;
-                padding-left: 67px;
-                font-size: 12px;
-                font-weight: 600;
-                padding-bottom: 50px;
-                &:nth-of-type(2){
-                    padding-bottom: 30px;
-                    grid-row: 3;
-                }
-            }
-            .name{
-                background-image: url('../assets/intro-name.png');
-                background-size: 100vh;
-                background-repeat: no-repeat;
-                background-position-x: 0;  
-               
-            }
-        }
-        .section-2{
-            background-image: url('../assets/me.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            filter: saturate(0);
-            border: 2px solid white;
-            border-right: none;
-            border-left: none;
-        }
-        .section-3{
-            border: 2px solid white;
-            border-bottom: 1px solid white;
-            background-color: #1b1b1b;
-            display: grid;
-            grid-template-rows: 100px 1fr 100px;
-            align-items: end;
-            color: #fff;
-            padding-left: 60px;
-            padding-right: 100px;
-            .intro-text{
-                font-size: 24px;
-                font-weight: 600;
-                padding-bottom: 44px;
-            }
-            .mouse-text{
-                display: grid;
-                align-items: center;
-                grid-template-columns: 3fr 1fr 1fr 1fr;
-                font-size: 12px;
-                padding-bottom: 30px;
-                text-transform: uppercase;
-                font-weight: 600;
-                &:nth-of-type(2){
-                    padding-bottom: 50px;
-                    p{
-                        grid-column: 1/-1;
-                    }
-                   
-                }
-                a{
-                    .fab, .far{
-                        font-size: 24px;
-                        color: #CF0156;
-                        @include transition(color 0.2s ease-in-out);
-                        &:hover{
-                            color: #fff; 
-                        }
-                    }
-                }
-            }
-        }
+    .section-2 {
+      background-image: url("../assets/me.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: saturate(0);
+      border: 2px solid white;
+      border-right: none;
+      border-left: none;
     }
-   
-    .questions{
+    .section-3 {
+      border: 2px solid white;
+      border-bottom: 1px solid white;
+      background-color: #1b1b1b;
+      display: grid;
+      grid-template-rows: 100px 1fr 100px;
+      align-items: end;
+      color: #fff;
+      padding-left: 60px;
+      padding-right: 100px;
+      .intro-text {
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 44px;
+      }
+      .mouse-text {
         display: grid;
-        color: white;
-        grid-template-rows: 1fr;
-        
-        .question{
-            overflow: scroll;
-            
-            border: 2px solid white;
-            border-right: none;
-            border-top: 1px solid white;
-            font-size: 24px;
-            transition: transform 0.3s;
-            z-index: 200;
-            display: grid;
-            grid-template-rows: 30px 1fr ;
-            p{
-                align-self: center;
-                justify-self: center;
-                
-            }
-            &:nth-of-type(3){
-                border-right: 2px solid white;
-            }
-            .interaction{
-                padding: 20px 0 0 20px;
-                text-transform: uppercase;
-                font-size: 12px;
-                font-weight: 600;
-                opacity: 1;
-                justify-self: flex-start;
-                cursor: pointer;
-             }
-             .interaction-mobile{
-                padding: 20px 0 0 20px;
-                text-transform: uppercase;
-                font-size: 12px;
-                font-weight: 600;
-                opacity: 1;
-                justify-self: center;
-                display: none;
-             }
-             .image{
-                 mix-blend-mode: lighten;
-             }
-        }
-        .question-1{
-            background-color: #000;
-            position: relative;
-            // background-image: url('../assets/About.png');
-            // background-size: contain;
-            // background-repeat: no-repeat;
-
-            
-            .about-me-container{
-                position: absolute;
-                display: grid;
-                grid-template-columns: 1fr 2fr 1fr;
-                top: 0;
-                left: 15%;
-                height: 100vh;
-                width: 80vw;
-                overflow: scroll;
-                padding: 50px 0; 
-                .about-me{
-                    grid-column: 2;
-                    display: grid;
-                    // background-color: rgba($color: #000000, $alpha: 0.2);
-                    // padding: 0 50px 0 50px;
-                    p{
-                        
-                        font-size: 20px;
-                        opacity: 0;
-                        align-self: center;
-
-                        // padding-right: 100px;
-                        // padding-bottom: 200px;
-                        &:first-of-type{
-                            // padding: 5rem 0;
-                        }
-                        &:last-of-type{
-                            padding-bottom: 100px;
-                        }
-                        
-                    }
-                    h6{
-                        padding-top: 20px;
-                    }
-                    h1{
-                        padding: 20px 0;
-                    }
-                }
-                
-            }
-            
-        }
-        .question-2{
-            background-color: #0F0F0F;
-            position: relative;
-            // background-image: url('../assets/q2.png');
-            background-size: cover;
-            h1{
-                transform: rotate(-90deg);
-            }
-            .work-container{
-                position: absolute;
-                top: 0;
-                left: 15%;
-                height: 100vh;
-                width: 80vw;
-                padding: 50px;
-                // display: grid;
-                // grid-template-columns: 1fr 3fr;
-                // grid-template-rows: 1fr;
-                overflow: scroll;
-                .work{
-                    height: 200vh;
-                    display: grid;
-                    grid-template-rows: 1fr 1fr 1fr;
-                    opacity: 1;
-                    overflow: scroll;
-
-                    .project{
-                        display: grid;
-                        padding: 50px 0;
-                        // grid-template-rows: 100px 1fr;
-                        // justify-content: left;
-                        // align-items: center;
-                        margin-bottom: 5px;
-                        a{
-                            opacity: 1;
-                            @include transition(opacity.3s ease-in-out);
-                            // transition: all 0.3 ease-in-out;
-                            &:hover{
-                                opacity: 1;
-                            }
-                            .cover-image{
-                                height: 100%;
-                                width: auto;
-                            
-                            }
-                        }
-                        
-                        p{
-                            justify-self: start;
-                        }
-                    }
-                    .project-1{
-                        a{
-                            height: 100%;
-                            grid-row: 1/-1;
-                            .cover-image{
-                                background-color: #000000;
-                                color: #C350DC;
-                                width: 100%;
-                                // font-weight: bold;
-                                position: relative;            
-                                background-image: url('../assets/food_coma.png');
-                                background-position: center;
-                                background-size: 80%;
-                                background-repeat: no-repeat;
-                                background-position: 60% 40%;
-                                grid-row: 1/-1;
-                            }
-                        }
-                        
-                    }
-                    .project-2{
-                        a{
-                            height: 100%;
-                            grid-row: 1/-1;
-                            
-                            .cover-image{
-                                background-image: url('../assets/airbus.png');
-                                background-size: cover;
-                                background-position: center;
-
-                            }
-                        }
-                    }   
-                    .project-3{
-                       
-                        a{
-                            height: 100%;
-                            grid-row: 1/-1;
-                            .cover-image{
-                                background-image: url('../assets/instagram.png');
-                                background-size: cover;
-                                background-position: center;
-                            }
-                        }
-                    }
-                }
-                
-            }
-        }
-        .question-3{
-            background-color: #1B1B1B;
-            position: relative;
-            //background-image: url('../assets/q3.png');
-            background-size: cover;
-            .other-container{
-                position: absolute;
-                display: grid;
-                grid-template-columns: 1fr 2fr 1fr;
-                top: 0;
-                left: 15%;
-                height: 100vh;
-                width: 80%;
-                overflow: scroll;
-                
-                .other-stuff{
-                    
-                    grid-column: 2;
-                    padding: 5rem 0;
-                    p{
-                        font-size: 20px;
-                        opacity: 0;
-                    }
-                }
-                
-            }
-        }
-        .question-1 .image{
-            background-image: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%), url('../assets/About.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-           
-        }
-
-        .question-2 .image{
-            // width: 100%;
-            // height: 100%;
-            grid-row: 2;
+        align-items: center;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        font-size: 12px;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+        &:nth-of-type(2) {
+          padding-bottom: 50px;
+          p {
             grid-column: 1/-1;
-            // height: 100vh;
-            background-image: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%),url('../assets/Work.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-
-        }      
-        .question-3 .image{
-           
-            background-image: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%),url('../assets/Other.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-        }      
-    }
-            
-}
-@media screen and (max-width: 1200px){
-    .container{
-        .questions{
-            .question-1{
-                .about-me-container{
-                    .about-me{
-                        grid-column: 2/4;
-                        // p{
-                        //     padding-left: 50px;
-                        // }
-                    }
-                }
+          }
+        }
+        a {
+          .fab,
+          .far {
+            font-size: 24px;
+            color: #cf0156;
+            @include transition(color 0.2s ease-in-out);
+            &:hover {
+              color: #fff;
             }
-            .question-2 .work-container .work{
-                .project-1{
-                    a{
-                        .cover-image{
-                            background-image: url("../assets/food_coma_mobile.png");
-                        }
-                        
-                    }
-                }
-                .project-2{
-                    a{
-                        .cover-image{
-                            background-image: url("../assets/airbus_mobile.png");
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                        }
-                        
-                    }
-                }
-                .project-3{
-                    a{
-                        .cover-image{
-                            background-image: url("../assets/instagram_mobile.png");
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                        }
-                        
-                    }
-                }
-            } 
-            
+          }
         }
+      }
     }
-}
-@media screen and (max-width: 800px){
-    .container{
-        .intro, .questions{
-            grid-template-rows: 1fr 1fr 1fr ;
-            grid-template-columns: 1fr ;
+  }
+
+  .questions {
+    display: grid;
+    color: white;
+    grid-template-rows: 1fr;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &:-webkit-scrollbar {
+      display: none;
+    }
+    .question {
+      overflow: hidden;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      &:-webkit-scrollbar {
+        display: none;
+      }
+      border: 2px solid white;
+      border-right: none;
+      border-top: 1px solid white;
+      font-size: 24px;
+      transition: transform 0.3s;
+      z-index: 200;
+      display: grid;
+      grid-template-rows: 30px 1fr;
+      p {
+        align-self: center;
+        justify-self: center;
+      }
+      &:nth-of-type(3) {
+        border-right: 2px solid white;
+      }
+      .interaction {
+        padding: 20px 0 0 20px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        opacity: 1;
+        justify-self: flex-start;
+        cursor: pointer;
+      }
+      .interaction-mobile {
+        padding: 20px 0 0 20px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        opacity: 1;
+        justify-self: center;
+        display: none;
+      }
+      .image {
+        mix-blend-mode: lighten;
+      }
+    }
+    .question-1 {
+      background-color: #000;
+      position: relative;
+      // background-image: url('../assets/About.png');
+      // background-size: contain;
+      // background-repeat: no-repeat;
+
+      .about-me-container {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        top: 0;
+        left: 15%;
+        height: 100vh;
+        width: 80vw;
+        overflow: scroll;
+        padding: 50px 0;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        &:-webkit-scrollbar {
+          display: none;
         }
-        .intro{
-            height: 100vh;
-            .section-1{
-                background-color: white;
-                grid-row: 1/3;
-                background-image: url('../assets/intro-me-mobile.png');
+        .about-me {
+          grid-column: 2;
+          display: grid;
+          // background-color: rgba($color: #000000, $alpha: 0.2);
+          // padding: 0 50px 0 50px;
+          p {
+            font-size: 20px;
+            opacity: 0;
+            align-self: center;
+
+            // padding-right: 100px;
+            // padding-bottom: 200px;
+            &:first-of-type {
+              // padding: 5rem 0;
+            }
+            &:last-of-type {
+              padding-bottom: 100px;
+            }
+          }
+          h6 {
+            padding-top: 20px;
+          }
+          h1 {
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+    .question-2 {
+      background-color: #0f0f0f;
+      position: relative;
+      // background-image: url('../assets/q2.png');
+      background-size: cover;
+      h1 {
+        transform: rotate(-90deg);
+      }
+      .work-container {
+        position: absolute;
+        top: 0;
+        left: 15%;
+        height: 100vh;
+        width: 80vw;
+        padding: 50px;
+        // display: grid;
+        // grid-template-columns: 1fr 3fr;
+        // grid-template-rows: 1fr;
+        overflow: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        &:-webkit-scrollbar {
+          display: none;
+        }
+        .work {
+          height: 200vh;
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr;
+          opacity: 1;
+          overflow: scroll;
+
+          .project {
+            display: grid;
+            padding: 50px 0;
+            // grid-template-rows: 100px 1fr;
+            // justify-content: left;
+            // align-items: center;
+            margin-bottom: 5px;
+            a {
+              opacity: 1;
+              @include transition(opacity.3s ease-in-out);
+              // transition: all 0.3 ease-in-out;
+              &:hover {
+                opacity: 1;
+              }
+              .cover-image {
+                height: 100%;
+                width: auto;
+              }
+            }
+
+            p {
+              justify-self: start;
+            }
+          }
+          .project-1 {
+            a {
+              height: 100%;
+              grid-row: 1/-1;
+              .cover-image {
+                background-color: #000000;
+                color: #c350dc;
+                width: 100%;
+                // font-weight: bold;
+                position: relative;
+                background-image: url("../assets/food_coma.png");
+                background-position: center;
+                background-size: 80%;
+                background-repeat: no-repeat;
+                background-position: 60% 40%;
+                grid-row: 1/-1;
+              }
+            }
+          }
+          .project-2 {
+            a {
+              height: 100%;
+              grid-row: 1/-1;
+
+              .cover-image {
+                background-image: url("../assets/airbus.png");
                 background-size: cover;
                 background-position: center;
-                border-right: 2px solid white;
-                .mouse-text{
-                    visibility: hidden;
-                }
-                transform: rotate(0);
+              }
             }
-            .section-2{
-                display: none;
+          }
+          .project-3 {
+            a {
+              height: 100%;
+              grid-row: 1/-1;
+              .cover-image {
+                background-image: url("../assets/instagram.png");
+                background-size: cover;
+                background-position: center;
+              }
             }
+          }
         }
-        .questions{
-            .question{
-                .interaction{
-                    display: none;
-                }
-                .interaction-mobile{
-                    display: block;
-                 }
-            }
-            .question-1{
-            
-                border-right: 2px solid white;
-                border-bottom: none;
-                .about-me-container{
-                    left: 10%;
-                    .about-me{
-                        grid-column: 1/-1;
-                        padding-right: 2rem;
-                        p{
-                            padding-right: 10px;
-                        }
-                    }
-                }
-            }
-            .question-2{
-                border-right: 2px solid white;
-                border-bottom: none;
-            }
-            .question-2 .work-container{
-                grid-column: 1/-1;
-                left: 12%;
-                    .work{
-                        padding: 50px 0;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: 1fr 1fr 1fr;
-                        
-                        
-                        // .project-1{
-                        //     a{
-                        //         .cover-image{
-                        //             background-image: url("../assets/food_coma_mobile.png");
-                        //         }
-                                
-                        //     }
-                        // }
-                    }
-            }
-            .question-3{
-            
-                
-                .other-container{
-                    left: 10%;
-                    .other-stuff{
-                        grid-column: 1/-1;
-                        padding-right: 2rem;
-                        padding-left: 50px;
-                        
-                        p{
-                            padding-right: 10px;
-                            padding-bottom: 50px;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
-}
-@media screen and (max-width: 480px){
-    .container{
-        .intro{
-            .section-3{
-                padding: 30px;
-                .mouse-text:nth-of-type(1){
-                    grid-template-rows: 1fr 1fr;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    p{
-                        grid-column: 1/-1;
-                        padding-bottom: 20px;
+    .question-3 {
+      background-color: #1b1b1b;
+      position: relative;
+      //background-image: url('../assets/q3.png');
+      background-size: cover;
+      .other-container {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        top: 0;
+        left: 15%;
+        height: 100vh;
+        width: 80%;
+        overflow: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        &:-webkit-scrollbar {
+          display: none;
+        }
 
-                    }
-                }
-            }
+        .other-stuff {
+          grid-column: 2;
+          padding: 5rem 0;
+          p {
+            font-size: 20px;
+            opacity: 0;
+          }
         }
-        .questions{
-            .question-1{
-                .about-me-container{
-                    left: 10%;
-                    .about-me{
-                        grid-column: 1/-1;
-                        padding-right: 0px;
-                        p{
-                            padding: 0px;
-                        }
-                    }
-                }       
-            }
-            .question-2{
-                
-                .work-container{
-                    width: 120%;
-                    left: -10%;
-                    .work{
-                        grid-template-columns: 1fr;
-                        grid-template-rows: 1fr 1fr 1fr;
-                    }
-                }
-            }
-            .question-3{
-                
-                .other-container{
-                    left: 10%;
-                    grid-template-rows: 1fr 2fr 1fr;
-                    .other-stuff{
-                        
-                        grid-column: 1/-1;
-                        padding-right: 0px;
-                        padding-left: 0px;
-                        p{
-                            padding: 0px;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+    .question-1 .image {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.4) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url("../assets/About.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .question-2 .image {
+      // width: 100%;
+      // height: 100%;
+      grid-row: 2;
+      grid-column: 1/-1;
+      // height: 100vh;
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url("../assets/Work.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .question-3 .image {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url("../assets/Other.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
 }
- 
+@media screen and (max-width: 1200px) {
+  .container {
+    .questions {
+      .question-1 {
+        .about-me-container {
+          .about-me {
+            grid-column: 2/4;
+            // p{
+            //     padding-left: 50px;
+            // }
+          }
+        }
+      }
+      .question-2 .work-container .work {
+        .project-1 {
+          a {
+            .cover-image {
+              background-image: url("../assets/food_coma_mobile.png");
+            }
+          }
+        }
+        .project-2 {
+          a {
+            .cover-image {
+              background-image: url("../assets/airbus_mobile.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+        .project-3 {
+          a {
+            .cover-image {
+              background-image: url("../assets/instagram_mobile.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    .intro,
+    .questions {
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+    .intro {
+      height: 100vh;
+      .section-1 {
+        background-color: white;
+        grid-row: 1/3;
+        background-image: url("../assets/intro-me-mobile.png");
+        background-size: cover;
+        background-position: center;
+        border-right: 2px solid white;
+        .mouse-text {
+          visibility: hidden;
+        }
+        transform: rotate(0);
+      }
+      .section-2 {
+        display: none;
+      }
+    }
+    .questions {
+      .question {
+        .interaction {
+          display: none;
+        }
+        .interaction-mobile {
+          display: block;
+        }
+      }
+      .question-1 {
+        border-right: 2px solid white;
+        border-bottom: none;
+        .about-me-container {
+          left: 10%;
+          .about-me {
+            grid-column: 1/-1;
+            padding-right: 2rem;
+            p {
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      .question-2 {
+        border-right: 2px solid white;
+        border-bottom: none;
+      }
+      .question-2 .work-container {
+        grid-column: 1/-1;
+        left: 12%;
+        .work {
+          padding: 50px 0;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+
+          // .project-1{
+          //     a{
+          //         .cover-image{
+          //             background-image: url("../assets/food_coma_mobile.png");
+          //         }
+
+          //     }
+          // }
+        }
+      }
+      .question-3 {
+        .other-container {
+          left: 10%;
+          .other-stuff {
+            grid-column: 1/-1;
+            padding-right: 2rem;
+            padding-left: 50px;
+
+            p {
+              padding-right: 10px;
+              padding-bottom: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    .intro {
+      .section-3 {
+        padding: 30px;
+        .mouse-text:nth-of-type(1) {
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+          p {
+            grid-column: 1/-1;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+    .questions {
+      .question-1 {
+        .about-me-container {
+          left: 10%;
+          .about-me {
+            grid-column: 1/-1;
+            padding-right: 0px;
+            p {
+              padding: 0px;
+            }
+          }
+        }
+      }
+      .question-2 {
+        .work-container {
+          width: 120%;
+          left: -10%;
+          .work {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+          }
+        }
+      }
+      .question-3 {
+        .other-container {
+          left: 10%;
+          grid-template-rows: 1fr 2fr 1fr;
+          .other-stuff {
+            grid-column: 1/-1;
+            padding-right: 0px;
+            padding-left: 0px;
+            p {
+              padding: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
