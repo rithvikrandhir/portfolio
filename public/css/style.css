@@ -161,7 +161,6 @@ body {
 }
 
 .container .questions .question {
-  overflow: hidden;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -294,7 +293,6 @@ body {
   height: 100vh;
   width: 80vw;
   padding: 50px;
-  overflow: scroll;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -313,6 +311,14 @@ body {
       grid-template-rows: 1fr 1fr 1fr;
   opacity: 1;
   overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.container .questions .question-2 .work-container .work:-webkit-scrollbar {
+  display: none;
 }
 
 .container .questions .question-2 .work-container .work .project {
